@@ -1,0 +1,321 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #D8DDE1;
+}
+
+.navbar {
+  height: 4vmax;
+  background-color: #D8DDE1;
+  margin-top: 0;
+}
+.navbar .ContainerNavbar {
+  display: flex;
+  flex-flow: row wrap;
+  background-color: rgba(168, 207, 219, 0.4431372549);
+}
+
+.navbar-brand {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.navbar-brand .brandImg {
+  width: 5vmax;
+}
+.navbar-brand .brandText {
+  margin-bottom: 0;
+  color: #294e5a;
+  font-weight: 700;
+  font-family: "Rampart One", sans-serif;
+}
+
+.navbar-nav .nav-item .nav-link {
+  color: #23444e;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+/* media queries */
+/* estructura */
+/* ++++++++++++++++++++++++ media query |  pantalla gigante |   ++++++++++++++++++++++++++++++++++*/
+/* ++++++++++++++++++++++++ media query | pantalla extra extra lg  |   ++++++++++++++++++++++++++++++++++*/
+/* ++++++++++++++++++++++++ media query | pantalla extra lg   |  ++++++++++++++++++++++++++++++++++*/
+/* ++++++++++++++++++++++++ media query | pantalla lg  | ++++++++++++++++++++++++++++++++++*/
+@media screen and (max-width: 992px) {
+  .navbar {
+    height: 6vmax;
+  }
+  .navbar .ContainerNavbar .nav-izquierda {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .navbar .ContainerNavbar .nav-izquierda .navbar-brand .brandImg {
+    width: 4vmax;
+  }
+  .navbar .ContainerNavbar .nav-izquierda .navbar-brand .brandText {
+    font-size: 2vmax;
+  }
+  .navbar-toggler {
+    border: none;
+    padding: 0;
+    margin-bottom: 0.3vmax;
+  }
+  .navbar-collapse {
+    background-color: rgb(21, 60, 89);
+    margin: 3vmax;
+    padding: 1vmax;
+    border-radius: 10px;
+    padding-left: 2vmax;
+    z-index: 22;
+  }
+  .nav-link {
+    color: white !important;
+    font-weight: bold;
+  }
+  .nav-link:hover {
+    background-color: antiquewhite;
+    color: rgb(21, 60, 89) !important;
+    border-radius: 5px;
+    padding-left: 0.5vmax;
+  }
+  .dropdown-menu {
+    background-color: rgb(129, 166, 194);
+    border: none;
+  }
+  .dropdown-menu li .dropdown-item {
+    font-weight: bold;
+    color: rgb(21, 60, 89);
+  }
+  .dropdown-menu li .dropdown-item:hover {
+    font-weight: bold;
+    background-color: antiquewhite;
+    color: rgb(21, 60, 89) !important;
+    border-radius: 5px;
+  }
+}
+/* ++++++++++++++++++++++++ media query |  pantalla md   | ++++++++++++++++++++++++++++++++++*/
+@media screen and (max-width: 768px) {
+  .navbar {
+    height: 8vmax;
+    padding-bottom: 0.4vmax;
+  }
+  .navbar .ContainerNavbar .nav-izquierda {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .navbar .ContainerNavbar .nav-izquierda .navbar-brand .brandImg {
+    width: 5vmax;
+  }
+  .navbar .ContainerNavbar .nav-izquierda .navbar-brand .brandText {
+    font-size: 3vmax;
+  }
+}
+/* ++++++++++++++++++++++++ media query |  pantalla sm   | ++++++++++++++++++++++++++++++++++*/
+@media screen and (max-width: 576px) {
+  .navbar {
+    padding-bottom: 0.8vmax;
+  }
+}
+/* medida personalizada 420 */
+/* ++++++++++++++++++++++++ media query  | pantalla xxsm |   ++++++++++++++++++++++++++++++++++*/
+.headerContenedor {
+  height: 90vh;
+  background-image: url("../Img/uno.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+.col-izq-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  transform: scale(0.8);
+  opacity: 0;
+  animation: zoomIn 1.5s ease-out forwards;
+}
+@keyframes zoomIn {
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.col-izq-header .spanHeaderUno {
+  color: rgb(255, 255, 255);
+  font-family: "Alata", sans-serif;
+  font-size: 2.4vmax;
+  text-shadow: 8px 5px 4px rgba(0, 0, 0, 0.836);
+}
+.col-izq-header h1 {
+  color: white;
+  font-family: "Notable", sans-serif;
+  font-weight: 300;
+  font-size: 5.4vmax;
+  text-shadow: 4px 8px 8px rgba(0, 0, 0, 0.836);
+  letter-spacing: 1.5px;
+}
+.col-izq-header .botonHeader {
+  color: #ffffff;
+  background-color: #247452;
+  padding: 0.5vmax 2vmax;
+  border-radius: 5px;
+  text-decoration: none;
+  font-family: "Alata", sans-serif;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+  font-size: 1.4vmax;
+  box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.836);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.836);
+  margin-top: 2.5vmax;
+}
+.col-izq-header .botonHeader:hover {
+  color: #21273a;
+  background-color: #3edb9a;
+  text-shadow: none;
+}
+
+.sectionCards {
+  margin-bottom: 10vmax;
+  padding: 3vmax;
+}
+
+.primerCardsGroup {
+  height: 40vmax;
+  overflow: hidden;
+}
+
+.cardsDiv {
+  width: 100%;
+  position: relative; /* Necesario para que el texto se posicione sobre la imagen */
+  overflow: hidden; /* Para que el zoom no cambie el tamaño visible */
+  transition: transform 0.4s ease, filter 0.4s ease; /* Transición suave */
+}
+
+.contenedorCentralPalmeras {
+  padding: 0;
+}
+
+.subtitle {
+  font-family: "Alata", sans-serif;
+  font-weight: 700;
+  font-size: 3.5vmax;
+  padding: 2vmax;
+  text-align: center;
+  color: #0d1c20;
+}
+
+.cardsDiv img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease, filter 0.4s ease; /* Transición suave */
+}
+
+/* Efecto hover para zoom y filtro */
+.cardsDiv:hover img {
+  transform: scale(1.1); /* Zoom */
+  filter: brightness(0.8); /* Filtro de brillo para oscurecer ligeramente */
+}
+
+/* Texto que aparece en hover */
+.cardsDiv .cardText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6); /* Fondo semitransparente */
+  padding: 10px;
+  font-size: 1.5rem;
+  text-align: center;
+  opacity: 0; /* Inicialmente oculto */
+  transition: opacity 0.4s ease; /* Transición suave para aparición del texto */
+}
+
+.cardsDiv:hover .cardText {
+  opacity: 1; /* Texto aparece cuando se hace hover */
+}
+
+/* Efecto de link clicable sobre el texto */
+.cardsDiv .cardText a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.cardsDiv .cardText a:hover {
+  color: #ffd700; /* Cambia el color del enlace en hover */
+}
+
+.cardsDivLados {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0;
+  width: 100%;
+  height: 80%;
+}
+
+.cardCentralDiv {
+  height: 40vmax;
+  padding: 0;
+  margin: 0;
+}
+
+.cardsDerDiv,
+.cardsIzqDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1vmax;
+}
+
+/* 
+
+
+
+        // font-family: "Playwrite DE Grund", cursive;
+
+        // font-family: "Euphoria Script", cursive;
+
+        // font-family: "Merriweather", serif;
+
+        // font-family: "Montserrat", sans-serif;
+
+        // font-family: "Ruda", sans-serif;   
+
+        // font-family: "BIZ UDPGothic", sans-serif;   
+
+        // font-family: "Rampart One", sans-serif;
+
+        // font-family: "Suez One", serif;
+
+        // font-family: "Archivo Black", sans-serif;
+
+        // font-family: "Antic Slab", serif;    
+
+        // font-family: "Archivo Narrow", sans-serif;
+
+        // font-family: "Noto Sans JP", sans-serif;
+
+        // font-family: "Alata", sans-serif;
+
+        // font-family: "Notable", sans-serif;
+
+
+
+*/
+
+/*# sourceMappingURL=styles.css.map */

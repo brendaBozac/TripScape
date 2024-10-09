@@ -1,0 +1,244 @@
+.navbar {
+    height: 4vmax;
+    background-color: #D8DDE1;
+    margin-top: 0;
+
+
+    .ContainerNavbar {
+
+        display: flex;
+        flex-flow: row wrap;
+        background-color: #a8cfdb71;
+    }
+}
+    
+
+.navbar-brand {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    .brandImg {
+        width: 5vmax;
+    }
+
+    .brandText {
+        margin-bottom: 0;
+        color:#294e5a;
+        font-weight: 700;
+        font-family: "Rampart One", sans-serif;
+    }
+
+}
+
+
+
+.navbar-nav {
+
+
+    .nav-item {
+
+        .nav-link {
+            color:#23444e;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 500;
+        }
+    }
+
+}
+    
+
+
+
+
+
+
+
+
+
+/* media queries */
+/* estructura */
+
+/* ++++++++++++++++++++++++ media query |  pantalla gigante |   ++++++++++++++++++++++++++++++++++*/
+
+@media screen and (min-width:1401px) {
+    
+    
+}
+
+
+/* ++++++++++++++++++++++++ media query | pantalla extra extra lg  |   ++++++++++++++++++++++++++++++++++*/
+
+
+
+@media screen and (max-width:1400px) {
+    
+    
+}
+
+
+
+/* ++++++++++++++++++++++++ media query | pantalla extra lg   |  ++++++++++++++++++++++++++++++++++*/
+
+
+@media screen and (max-width:1200px) {
+    
+
+    
+}
+
+
+
+/* ++++++++++++++++++++++++ media query | pantalla lg  | ++++++++++++++++++++++++++++++++++*/
+
+
+@media screen and (max-width:992px) {
+    
+    .navbar {
+        height: 6vmax;
+    
+        .ContainerNavbar {
+            .nav-izquierda {
+                display: flex;
+                flex-flow: row nowrap;
+                width: 100%;
+                justify-content: space-between;
+    
+                .navbar-brand {
+                   
+                    .brandImg {
+                        width: 4vmax;
+                    }
+              
+                    .brandText {
+                        font-size: 2vmax;
+                    }
+    
+                }
+            }
+    
+        }
+    }
+
+    
+    .navbar-toggler {
+        border: none;
+        padding: 0;
+        margin-bottom: 0.3vmax;
+    }
+
+    .navbar-collapse {
+        background-color: rgb(21, 60, 89);
+        margin: 3vmax;
+        padding: 1vmax;
+        border-radius: 10px;
+        padding-left: 2vmax;
+        z-index: 22;
+    }
+
+    .nav-link {
+        color: white !important; 
+        font-weight: bold;
+    }
+    .nav-link:hover {
+        background-color: antiquewhite;
+        color: rgb(21, 60, 89) !important;
+        border-radius: 5px;
+        padding-left: 0.5vmax;
+    }
+
+    .dropdown-menu {
+        background-color: rgb(129, 166, 194);
+        border: none;
+
+        li {
+            
+            .dropdown-item {
+                font-weight: bold;
+                color: rgb(21, 60, 89);
+            }
+
+            .dropdown-item:hover {
+                font-weight: bold;
+                background-color: antiquewhite;
+                color: rgb(21, 60, 89) !important;
+                border-radius: 5px;
+            }
+        }
+    }
+
+   
+}
+
+
+/* ++++++++++++++++++++++++ media query |  pantalla md   | ++++++++++++++++++++++++++++++++++*/
+
+
+
+@media screen and (max-width:768px) {
+
+    
+    .navbar {
+        height: 8vmax;
+        padding-bottom: 0.4vmax;
+    
+        .ContainerNavbar {
+            .nav-izquierda {
+                display: flex;
+                flex-flow: row nowrap;
+                width: 100%;
+                justify-content: space-between;
+
+    
+                .navbar-brand {
+                   
+                    .brandImg {
+                        width: 5vmax;
+                    }
+              
+                    .brandText {
+                        font-size: 3vmax;
+                    }
+    
+                }
+
+            }
+    
+        }
+    }
+
+}
+
+
+
+
+/* ++++++++++++++++++++++++ media query |  pantalla sm   | ++++++++++++++++++++++++++++++++++*/
+
+@media screen and (max-width:576px) {
+
+    .navbar {
+        padding-bottom: 0.8vmax;
+    }
+    
+
+}
+
+
+/* medida personalizada 420 */
+
+
+
+@media screen and (max-width:420px) {
+
+
+
+
+}
+
+/* ++++++++++++++++++++++++ media query  | pantalla xxsm |   ++++++++++++++++++++++++++++++++++*/
+
+@media screen and (max-width:320px) {
+
+
+}
