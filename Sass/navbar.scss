@@ -18,9 +18,11 @@
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
+    gap: 0.2vmax;
 
     .brandImg {
-        width: 5vmax;
+        width: 2vmax;
+        color:#294e5a;
     }
 
     .brandText {

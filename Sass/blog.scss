@@ -1,0 +1,53 @@
+.article-card {
+    width: 100%;
+    max-width: 90%;
+    margin: 2vmax auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+  }
+  
+  .article-card img {
+    width: 18vmax;
+    height: auto;
+    
+  }
+  
+  .content {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .article-text {
+    max-height: 80px; /* Controla la cantidad de texto visible */
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+  }
+
+ 
+
+  .article-text.expanded {
+    max-height: 500px; /* Altura expandida */
+  }
+  
+  .read-more-btn {
+    display: block;
+    margin: 10px 0;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .read-more-btn:hover {
+    background-color: #0056b3;
+  }

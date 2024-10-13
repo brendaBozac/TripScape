@@ -1,0 +1,160 @@
+
+
+// Variables for colors and fonts
+$primary-color: #1a1a1a;
+$secondary-color: #f0f0f0;
+$accent-color: #b8975d; // Gold accent for elegance
+$font-family: 'Helvetica Neue', sans-serif;
+$font-size-base: 16px;
+
+body {
+  font-family: $font-family;
+  font-size: $font-size-base;
+  background-color: $secondary-color;
+  color: $primary-color;
+}
+
+// Container styling
+/* .container {
+  padding: 3rem 0;
+} */
+
+// Row styling
+.pack-container {
+
+    /* display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1vmax;
+ */
+    
+    margin-bottom: 2vmax;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: scale(1.02);
+    }
+
+    .titulo-pack {
+        font-size: 3vmax;
+        text-align: center;
+        padding-top: 1.5vmax;
+    }
+
+    .duracion {
+        font-size: 1.5vmax;
+        text-align: center;
+    }
+
+  
+}
+
+
+
+// Text column styling
+.div-textos-pack {
+  padding: 2rem;
+
+  
+
+  p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+    color: darken($primary-color, 10%);
+  }
+
+  
+
+  ul {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+
+    li {
+      margin-bottom: 0.5rem;
+      font-size: 1rem;
+      list-style: none;
+      position: relative;
+
+      &:before {
+        content: "\2022"; // Bullet point
+        position: absolute;
+        left: -20px;
+        color: $accent-color;
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  span {
+    display: block;
+    margin-top: 1rem;
+    color: $accent-color;
+    font-weight: bold;
+  }
+}
+
+.description-pack {
+    text-align: justify !important;
+  }
+
+// Image column styling
+.div-img-pack {
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5vmax;
+
+
+  img {
+    width: 30vmax;
+    height: auto;
+    border-radius: 10px;
+  }
+
+
+  a {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    background-color: $accent-color; // Usamos el dorado suave para el botón
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-align: center;
+    
+    &:hover {
+      background-color: darken($accent-color, 10%);
+      transform: translateY(-3px);
+    }
+  }
+
+
+}
+
+// Media queries for responsiveness
+@media (max-width: 768px) {
+  .div-textos-pack, .div-img-pack {
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .div-img-pack {
+    margin-bottom: 1rem;
+  }
+
+  .div-textos-pack h3 {
+    font-size: 1.5rem;
+  }
+}
