@@ -1,9 +1,17 @@
 .section-servicios {
     padding: 0;
-    margin: 0;
+    margin-bottom: 2vmax;
 }
 
+
+
 .bannerContainer {
+
+    .div-titulo-banner {
+        text-align: center;
+        padding-bottom: 1.5vmax;
+        font-family: "Alata", sans-serif;
+    }
 
     
     background-color: rgb(202, 194, 157);
@@ -11,6 +19,7 @@
     width: 100%;
     padding: 2vmax;
     margin: 0;
+
 
     .div-icono-servicio {
         display: flex;

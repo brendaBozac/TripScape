@@ -1,6 +1,19 @@
+.row-blog-titulo-container {
+  margin: 0 auto;
+}
+
+.tituloGralBlogSection {
+  text-align: center;
+  font-size: 5vmax;
+  font-family: "Alata", sans-serif;
+  font-weight: 700;
+  padding: 1vmax 3vmax;
+  margin: 0 auto;
+}
+
 .article-card {
     width: 100%;
-    max-width: 90%;
+    max-width: 80%;
     margin: 2vmax auto;
     display: flex;
     justify-content: center;
@@ -9,6 +22,7 @@
     border-radius: 10px;
     overflow: hidden;
     transition: max-height 0.5s ease;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.445);
   }
   
   .article-card img {
@@ -29,6 +43,8 @@
     max-height: 80px; /* Controla la cantidad de texto visible */
     overflow: hidden;
     transition: max-height 0.5s ease;
+    padding: 1vmax;
+    text-align: justify;
   }
 
  

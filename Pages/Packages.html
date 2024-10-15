@@ -25,43 +25,107 @@
 <body>
 
 
+    <!-- navbar -->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary container-fluid">
+        <div class="container-fluid ContainerNavbar">
+            <div class="nav-izquierda">
+                <a class="navbar-brand ms-2" href="#">
+                    <img class="brandImg" src="../Img/logo.png" alt="logo de la agencia">
+                    <p class="brandText">TripScape</p>
+                </a>
+                <button class="navbar-toggler p-1" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto me-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Packages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Excursions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Hotels</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Popular Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Vehicle Rental</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Contact Us
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="#">About Us</a></li>
+                            <li><a class="dropdown-item" href="#">Contact Us</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Frequently Asked Questions</a></li>
+                        </ul>
+
+                    </li>
+
+
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <!-- detalle PACKAGES SECTION -->
 
     <section class="container">
 
+        <div class="row">
+            <div class="col-12 tituloGralPacks">
+                <h2>Find the Perfect Trip for You</h2>
+            </div>
+        </div>
 
-        <div class="row pack-container">
+
+        <div class="row pack-container my-5">
 
             <div class="col-12">
                 <h3 class="titulo-pack">Italy: Rome and Tuscany</h3>
                 <p class="duracion">Duration: 7 days / 6 nights</p>
             </div>
 
-            <div class="col-7 div-textos-pack">
+
+            <div class="containerImgDescripCard">
+
+                <div class="col-xl-5 div-img-pack">
+                    <img src="../Img/roma-final.jpg" alt="">
+                    <a href="">Reserv</a>
+
+                </div>
 
 
-                <p class="description-pack">Description: This experience will take you through the ancient cobblestone
-                    streets of Rome, visit the majestic Colosseum and Trevi Fountain. Afterwards, travel to the heart of
-                    Tuscany to enjoy vineyards, medieval towns, and the finest Italian cuisine. A perfect combination of
-                    history
-                    and breathtaking landscapes!</p>
-                <ul>
-                    <h4>Includes:</h4>
-                    <li>Round-trip flights from your home city.</li>
-                    <li>Guided tour of the Colosseum, Vatican City, and Vatican Museums.</li>
-                    <li>Private transfer from Rome to Tuscany.</li>
-                    <li>Breakfasts included.</li>
-                </ul>
-                <p>Price per person: $2,200 USD</p>
-                <span>Special offer: Book before November 15 and get 10% off.</span>
+                <div class="col-xl-7 div-textos-pack">
+
+                    <p class="description-pack">Description: This experience will take you through the ancient cobblestone
+                        streets of Rome, visit the majestic Colosseum and Trevi Fountain. Afterwards, travel to the heart of
+                        Tuscany to enjoy vineyards, medieval towns, and the finest Italian cuisine. A perfect combination of
+                        history
+                        and breathtaking landscapes!</p>
+                    <ul>
+                        <h4>Includes:</h4>
+                        <li>Round-trip flights from your home city.</li>
+                        <li>Guided tour of the Colosseum, Vatican City, and Vatican Museums.</li>
+                        <li>Private transfer from Rome to Tuscany.</li>
+                        <li>Breakfasts included.</li>
+                    </ul>
+                    <p>Price per person: $2,200 USD</p>
+                    <span>Special offer: Book before November 15 and get 10% off.</span>
+                </div>
             </div>
 
-            <div class="col-5 div-img-pack">
-                <img src="../Img/roma-final.jpg" alt="">
-                <a href="">Reserv</a>
-
-            </div>
 
 
 
@@ -76,13 +140,13 @@
             </div>
 
 
-            <div class="col-5 div-img-pack">
+            <div class="col-xl-5 div-img-pack">
                 <img src="../Img/tailandia-final.jpg" alt="">
                 <a href="">Reserv</a>
 
             </div>
 
-            <div class="col-7 div-textos-pack">
+            <div class="col-xl-7 div-textos-pack">
 
 
                 <p class="description-pack">Description: Discover the charm and contrasts of Thailand with this amazing
@@ -121,13 +185,13 @@
             </div>
 
 
-            <div class="col-5 div-img-pack">
+            <div class="col-xl-5 div-img-pack">
                 <img src="../Img/californiacuadrado.jpg" alt="">
                 <a href="">Reserv</a>
 
             </div>
 
-            <div class="col-7 div-textos-pack">
+            <div class="col-xl-7 div-textos-pack">
 
 
                 <p class="description-pack">Description: The perfect experience for nature lovers, vibrant cities, and cinematic 
@@ -162,13 +226,13 @@
             </div>
 
 
-            <div class="col-5 div-img-pack">
+            <div class="col-xl-5 div-img-pack">
                 <img src="../Img/globos-final.jpg" alt="">
                 <a href="">Reserv</a>
 
             </div>
 
-            <div class="col-7 div-textos-pack">
+            <div class="col-xl-7 div-textos-pack">
 
 
                 <p class="description-pack">Description: Be captivated by the exotic allure of Morocco with this package that takes you through the historic imperial cities of Marrakech, Fez, and Rabat, culminating with an unforgettable 
@@ -197,13 +261,13 @@
             </div>
 
 
-            <div class="col-4 div-img-pack">
+            <div class="col-xl-5 div-img-pack">
                 <img src="../Img/montaña-final.jpg" alt="">
                 <a href="">Reserv</a>
 
             </div>
 
-            <div class="col-8 div-textos-pack">
+            <div class="col-xl-7 div-textos-pack">
 
 
                 <p class="description-pack">Description:  Immerse yourself in the beauty of Switzerland with this package that will take you through the stunning Alpine 

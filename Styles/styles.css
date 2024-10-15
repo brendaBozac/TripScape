@@ -9,6 +9,41 @@ body {
   background-color: #D8DDE1;
 }
 
+/* 
+
+
+
+        // font-family: "Playwrite DE Grund", cursive;
+
+        // font-family: "Euphoria Script", cursive;
+
+        // font-family: "Merriweather", serif;
+
+        // font-family: "Montserrat", sans-serif;
+
+        // font-family: "Ruda", sans-serif;   
+
+        // font-family: "BIZ UDPGothic", sans-serif;   
+
+        // font-family: "Rampart One", sans-serif;
+
+        // font-family: "Suez One", serif;
+
+        // font-family: "Archivo Black", sans-serif;
+
+        // font-family: "Antic Slab", serif;    
+
+        // font-family: "Archivo Narrow", sans-serif;
+
+        // font-family: "Noto Sans JP", sans-serif;
+
+        // font-family: "Alata", sans-serif;
+
+        // font-family: "Notable", sans-serif;
+
+
+
+*/
 .navbar {
   height: 4vmax;
   background-color: #D8DDE1;
@@ -188,7 +223,7 @@ body {
 }
 
 .sectionCards {
-  margin-bottom: 10vmax;
+  margin-bottom: 4vmax;
   padding: 3vmax;
 }
 
@@ -286,22 +321,21 @@ body {
 }
 
 body {
-  font-family: "Helvetica Neue", sans-serif;
-  font-size: 16px;
+  font-family: "Alata", sans-serif;
+  font-size: 1.2vmax;
   background-color: #f0f0f0;
   color: #1a1a1a;
 }
 
-/* .container {
-  padding: 3rem 0;
-} */
+.tituloGralPacks {
+  text-align: center;
+  font-weight: 700;
+  font-size: 5vmax;
+  padding-top: 2vmax;
+  color: #0d1c20;
+}
+
 .pack-container {
-  /* display: flex;
-     flex-flow: row nowrap;
-     justify-content: center;
-     align-items: center;
-     gap: 1vmax;
-  */
   margin-bottom: 2vmax;
   background-color: white;
   border-radius: 10px;
@@ -313,20 +347,26 @@ body {
   transform: scale(1.02);
 }
 .pack-container .titulo-pack {
-  font-size: 3vmax;
+  font-family: "Alata", sans-serif;
+  font-size: 2vmax;
   text-align: center;
   padding-top: 1.5vmax;
 }
 .pack-container .duracion {
-  font-size: 1.5vmax;
+  font-size: 1.2vmax;
   text-align: center;
+}
+
+.containerImgDescripCard {
+  display: flex;
+  flex-flow: row wrap;
 }
 
 .div-textos-pack {
   padding: 2rem;
 }
 .div-textos-pack p {
-  font-size: 1rem;
+  font-size: 1.2vmax;
   line-height: 1.6;
   margin-bottom: 0.5rem;
   color: #010101;
@@ -338,7 +378,7 @@ body {
 }
 .div-textos-pack ul li {
   margin-bottom: 0.5rem;
-  font-size: 1rem;
+  font-size: 1vmax;
   list-style: none;
   position: relative;
 }
@@ -347,7 +387,7 @@ body {
   position: absolute;
   left: -20px;
   color: #b8975d;
-  font-size: 1.5rem;
+  font-size: 1.2vmax;
 }
 .div-textos-pack span {
   display: block;
@@ -378,7 +418,7 @@ body {
   padding: 0.75rem 1.5rem;
   background-color: #b8975d;
   color: white;
-  font-size: 1rem;
+  font-size: 1vmax;
   font-weight: bold;
   text-decoration: none;
   border-radius: 5px;
@@ -404,7 +444,7 @@ body {
 }
 .section-servicios {
   padding: 0;
-  margin: 0;
+  margin-bottom: 2vmax;
 }
 
 .bannerContainer {
@@ -412,6 +452,11 @@ body {
   width: 100%;
   padding: 2vmax;
   margin: 0;
+}
+.bannerContainer .div-titulo-banner {
+  text-align: center;
+  padding-bottom: 1.5vmax;
+  font-family: "Alata", sans-serif;
 }
 .bannerContainer .div-icono-servicio {
   display: flex;
@@ -437,9 +482,22 @@ body {
   font-family: "Alata", sans-serif;
 }
 
+.row-blog-titulo-container {
+  margin: 0 auto;
+}
+
+.tituloGralBlogSection {
+  text-align: center;
+  font-size: 5vmax;
+  font-family: "Alata", sans-serif;
+  font-weight: 700;
+  padding: 1vmax 3vmax;
+  margin: 0 auto;
+}
+
 .article-card {
   width: 100%;
-  max-width: 90%;
+  max-width: 80%;
   margin: 2vmax auto;
   display: flex;
   justify-content: center;
@@ -448,6 +506,7 @@ body {
   border-radius: 10px;
   overflow: hidden;
   transition: max-height 0.5s ease;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.445);
 }
 
 .article-card img {
@@ -467,6 +526,8 @@ body {
   max-height: 80px; /* Controla la cantidad de texto visible */
   overflow: hidden;
   transition: max-height 0.5s ease;
+  padding: 1vmax;
+  text-align: justify;
 }
 
 .article-text.expanded {
@@ -488,40 +549,15 @@ body {
   background-color: #0056b3;
 }
 
-/* 
+.imgHotel {
+  object-position: center center;
+  object-fit: cover;
+}
 
-
-
-        // font-family: "Playwrite DE Grund", cursive;
-
-        // font-family: "Euphoria Script", cursive;
-
-        // font-family: "Merriweather", serif;
-
-        // font-family: "Montserrat", sans-serif;
-
-        // font-family: "Ruda", sans-serif;   
-
-        // font-family: "BIZ UDPGothic", sans-serif;   
-
-        // font-family: "Rampart One", sans-serif;
-
-        // font-family: "Suez One", serif;
-
-        // font-family: "Archivo Black", sans-serif;
-
-        // font-family: "Antic Slab", serif;    
-
-        // font-family: "Archivo Narrow", sans-serif;
-
-        // font-family: "Noto Sans JP", sans-serif;
-
-        // font-family: "Alata", sans-serif;
-
-        // font-family: "Notable", sans-serif;
-
-
-
-*/
+.footerContainer {
+  background-color: aqua;
+  margin: 0;
+  height: 15vmax;
+}
 
 /*# sourceMappingURL=styles.css.map */
