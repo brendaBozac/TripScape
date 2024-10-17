@@ -1,0 +1,24 @@
+.div-stars-hotels-azul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    gap: 0.5vmax;
+    padding-bottom: 1vmax;
+
+    img {
+        width: 3vmax;
+    }
+}
+
+
+.div-stars-hotels {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    gap: 0.5vmax;
+    padding-bottom: 1vmax;
+
+    img {
+        width: 2vmax;
+    }
+}

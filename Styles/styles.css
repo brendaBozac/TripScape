@@ -46,13 +46,15 @@ body {
 */
 .navbar {
   height: 4vmax;
-  background-color: #D8DDE1;
+  background-color: rgba(168, 207, 219, 0.4431372549);
   margin-top: 0;
+  position: fixed;
+  z-index: 4;
 }
 .navbar .ContainerNavbar {
+  background-color: #D8DDE1;
   display: flex;
   flex-flow: row wrap;
-  background-color: rgba(168, 207, 219, 0.4431372549);
 }
 
 .navbar-brand {
@@ -448,7 +450,7 @@ body {
 }
 
 .bannerContainer {
-  background-color: rgb(202, 194, 157);
+  background-color: #F0F0F0;
   width: 100%;
   padding: 2vmax;
   margin: 0;
@@ -552,6 +554,107 @@ body {
 .imgHotel {
   object-position: center center;
   object-fit: cover;
+}
+
+.ExcursionContainer {
+  margin: 0 auto;
+}
+.ExcursionContainer .ExcursionCard {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 2vmax;
+}
+.ExcursionContainer .ExcursionCard .textosExcursionesCard-Div {
+  width: 50%;
+}
+.ExcursionContainer .ExcursionCard .imgExcursionesCard-Div {
+  width: 50%;
+}
+.ExcursionContainer .ExcursionCard .imgExcursionesCard-Div img {
+  width: 100%;
+}
+
+.card-img-top {
+  height: 26vmax;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.ExcursContainer {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2vmax auto;
+  padding: 0 2vmax;
+  width: 100%;
+}
+.ExcursContainer .excursCard {
+  position: relative;
+  overflow: hidden;
+  width: 25%;
+  padding: 0;
+}
+.ExcursContainer .excursCard img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center center;
+  padding: 0;
+  margin: 0;
+  transition: filter 0.3s ease, transform 0.3s ease;
+  filter: sepia(30%) hue-rotate(30deg);
+}
+.ExcursContainer .excursCard:hover img {
+  filter: brightness(1.3);
+  transform: scale(1.05);
+}
+.ExcursContainer .excursCard .nombreviajeDiv {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5vmax;
+  padding: 2vmax 0.8vmax;
+  background: rgba(0, 0, 0, 0.74);
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.ExcursContainer .excursCard .nombreviajeDiv img {
+  width: 2vmax;
+}
+.ExcursContainer .excursCard .nombreviajeDiv p {
+  font-size: 1.5vmax;
+  margin-bottom: 0;
+}
+.ExcursContainer .excursCard:hover .nombreviajeDiv {
+  opacity: 1;
+}
+
+.div-stars-hotels-azul {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  gap: 0.5vmax;
+  padding-bottom: 1vmax;
+}
+.div-stars-hotels-azul img {
+  width: 3vmax;
+}
+
+.div-stars-hotels {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  gap: 0.5vmax;
+  padding-bottom: 1vmax;
+}
+.div-stars-hotels img {
+  width: 2vmax;
 }
 
 .footerContainer {

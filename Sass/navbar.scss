@@ -1,14 +1,18 @@
 .navbar {
     height: 4vmax;
-    background-color: #D8DDE1;
+    
+    // background-color: rgb(202, 194, 157);
+    background-color: #a8cfdb71;
     margin-top: 0;
-
+    position: fixed;
+    z-index: 4;
 
     .ContainerNavbar {
-
+        background-color: #D8DDE1;
         display: flex;
         flex-flow: row wrap;
-        background-color: #a8cfdb71;
+        
+        
     }
 }
     
